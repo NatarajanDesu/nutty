@@ -1,0 +1,65 @@
+@charset 'UTF-8';
+
+.slick-active>.carousel-paginator-item {
+    background: #888;
+    cursor: default;
+}
+
+.carousel-paginator-list,.carousel-paginator .paginator-list
+{
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+    display:block;
+    font-size:0;
+    list-style:none;
+    margin:0;
+    padding:20px 0 0;
+    text-align:center;
+    user-select:none;
+}
+
+.carousel-paginator-list li,.carousel-paginator .paginator-list li
+{
+    display:inline-block;
+    margin-left:18px;
+    vertical-align:top;
+}
+
+.carousel-paginator-list li:first-child,.carousel-paginator .paginator-list li:first-child
+{
+    margin-left:0;
+}
+.carousel-paginator-item, .carousel-paginator .paginator-list a, .carousel-paginator .paginator-list button {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    display: block;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #d9d9d9;
+    color: transparent;
+} 
+
+.carousel-paginator-item:before,.carousel-paginator .paginator-list a:before,.carousel-paginator .paginator-list button:before
+{
+    content:"";
+    display:block;
+    height:150%;
+    width:0;
+}
+
+.carousel-paginator-item:hover,.carousel-paginator .paginator-list a:hover,.carousel-paginator .paginator-list button:hover,.carousel-paginator-item:focus,.carousel-paginator .paginator-list a:focus,.carousel-paginator .paginator-list button:focus
+{
+    background:#d9d9d9;
+    outline:0;
+}
+
+.carousel-paginator-item.active,.carousel-paginator .paginator-list a.active,.carousel-paginator .paginator-list button.active
+{
+    background:#888;
+    cursor:default;
+}

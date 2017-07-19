@@ -1,0 +1,508 @@
+/**css files **/
+
+
+html,body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+img,
+embed,
+object {
+max-width: 100%;
+margin:0;
+
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+/**************************************************************************/
+/**************FONTS AND COPY******************************************************/
+/**************************************************************************/
+
+@font-face {
+  font-family: 'Myriadpro-Regular';
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/MyriadPro-Regular.otf')  format('opentype'),
+       url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf')  format('truetype'), url('../fonts/MyriadPro-Regular.svg#Gotham-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Light';
+  src: url('../fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/MyriadPro-Light.otf')  format('opentype'),
+         url('../fonts/MyriadPro-Light.woff') format('woff'), url('../fonts/MyriadPro-Light.ttf')  format('truetype'), url('../fonts/MyriadPro-Light.svg#MyriadPro-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url('../fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/MyriadPro-Bold.otf')  format('opentype'),
+         url('../fonts/MyriadPro-Bold.woff') format('woff'), url('../fonts/MyriadPro-Light.ttf')  format('truetype'), url('../fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bogle-Regular';
+  src: url('../fonts/Bogle-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Bogle-Regular.otf')  format('opentype'),
+	     url('../fonts/Bogle-Regular.woff') format('woff'), url('../fonts/Bogle-Regular.ttf')  format('truetype'), url('../fonts/Bogle-Regular.svg#Bogle-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bogle-Bold';
+  src: url('../fonts/Bogle-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Bogle-Bold.otf')  format('opentype'),
+	     url('../fonts/Bogle-Bold.woff') format('woff'), url('../fonts/Bogle-Bold.ttf')  format('truetype'), url('../fonts/Bogle-Bold.svg#Bogle-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/**************************************************************************/
+/*************PAGE*******************************************************/
+/**************************************************************************/
+
+#main-wrap {
+    position:relative;
+    text-align: left;
+    height:auto;
+    margin:0px auto 0;
+    width:100%;
+    min-width: 20em;
+    background: #f7f7f7;
+}
+.page ul{
+    margin: 0;
+    padding: 0
+}
+
+#main-wrap a{
+    text-decoration: none;
+}
+
+#main-wrap img.primary { 
+    border: 0 none;
+    width: 244px;
+}
+
+.fullwidth_wrap {
+    position:relative;
+    height:auto;
+    float:left;
+    margin:0 auto 0;
+    width:100%;
+    display:block;
+}
+
+.inner_wrap {
+    position:relative;
+    text-align:left;
+    height:auto;
+    margin:0 auto;
+    width:100%;
+    overflow: hidden;
+    max-width:1364px;
+    display:block;
+    background: #f7f7f7;
+}
+
+.inner_wrap img { border: 0 none; }
+
+ol, ul {list-style: none}
+
+.align-center{
+    text-align: center;
+}
+
+/**************************************************************************/
+/*************PAGE 1364 px FULL WIDTH**************************************/
+/**************************************************************************/
+
+ /* Setup Screen */
+
+.trm_desktop {
+    display: block;
+}
+
+.trm_mobile {
+    display: none;
+}
+
+.cursor_on{
+    cursor:pointer; 
+}
+
+
+/* Sets the style for the elaspesd progress. */
+.jw-skin-seven .jw-progress {
+    background: #007dc6 !important;
+}
+
+/* Sets the color of the scrub bar dot playing.*/
+.jw-knob {
+    background-color: #f47421 !important;
+}
+
+
+
+.jw-rightclick li.jw-featured:hover,.jw-rightclick li:hover a{
+    background-color:#e4e6ed !important;
+    color:#007dc6 !important;
+}
+
+/* Sets the color of the play icon of the currently playing playlist item.*/
+.jw-skin-seven .jw-playlist-container .jw-label .jw-icon-play,.jw-skin-seven .jw-playlist-container .jw-option:hover .jw-label{
+    color:#007dc6 !important;
+}
+
+/* Color for all buttons for when they are hovered on. */
+.jw-skin-seven .jw-button-color:hover,.jw-skin-seven .jw-toggle{
+    color:#007dc6 !important;
+}
+
+/*This sets the font color and background color for the active item in HD and CC menus. */
+.jw-skin-seven .jw-icon-tooltip .jw-active-option{
+    background-color:#007dc6 !important;
+    color:#fff !important;
+}
+
+/*This hides the fullscreen button*/
+/*.jw-icon-fullscreen {
+    display: none !important;
+}*/
+
+.jwplayer.jw-state-paused .jw-display-icon-container {
+display: table;
+}
+.jwplayer.jw-state-paused .jw-icon-display::before {
+content: "\e60e";
+}
+
+.trm_crosslink {
+    position: relative;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.carousel-paginator-list, .carousel-paginator .paginator-list {
+    padding: 20px 0 0 !important;
+}
+
+.prod, .slick-slide, .prod .Tile {
+    min-height: 200px !important;
+}
+.slick-slide{
+    position: relative;
+}
+.see-all-link {
+    color: #fff !important;
+}
+
+.remodal {
+    max-width: 80% !important;
+}
+
+.remodal-close {
+    right: 0 !important;
+    left: inherit !important;
+}
+
+.slick-track {
+    margin: auto;
+}
+
+.clearfix {
+    overflow: auto;
+}
+.btn-primary{
+    background-color: #e75300
+}
+
+/*************HEADER**************************************/
+
+
+.slick-prev, .slick-prev:hover, .slick-prev:focus{
+    background: url(../img/slide-prev.png) no-repeat;
+    width: 50px;
+    height: 100px;
+    opacity: 0.7
+}
+.slick-prev:hover, .slick-prev:focus{
+    opacity: 1
+}
+.slick-next, .slick-next:hover, .slick-next:focus{
+    background: url(../img/slide-next.png) no-repeat;
+    width: 50px;
+    height: 100px;
+    opacity: 0.7
+}
+.slick-next:hover, .slick-next:focus{
+    opacity: 1
+}
+
+/*************Dynamic Product**************************************/
+.prod-mx{
+    position: relative; 
+    text-align: center;
+    display: inline-block;
+}
+.tile-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9
+}
+.tile-content{
+     min-height: 80px;
+     overflow: hidden;
+}
+.tile-heading{
+    font-family: 'Myriadpro-Regular';
+    font-size: 16px;
+    color: #005aa2;
+    font-weight: normal;
+    text-align: left;
+    padding: 0 10px;
+    margin: 0;
+   
+}
+.product-image{
+    width: 365px;
+    vertical-align: top;
+}
+
+/** pov css **/
+.trm-prod-sec{
+    margin: 30px 0;
+    display: inline-block;
+    width: 100%;
+}
+.trm-pov-sec{
+    position: relative;
+    padding: 10px 0;
+}
+.trm-pov-cont{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);  
+    top:90px;
+    width: 472px;
+    text-align: center;
+    color: #000;
+}
+.trm-pov-cont h2{
+    font-size:59px;
+	font-family: 'Bogle-Bold';
+}
+.trm-pov-cont p{
+    font-size: 20px;
+	font-family: 'Bogle-Regular';
+}
+
+
+/** product sec **/
+.trm-prod-img{
+    display: inline-block;
+    width:67.5%;
+    position: relative;
+}
+.trm-prod-cont{
+    width: 50%;
+    background: #0066b3;
+    color:#fff;
+    position: absolute;
+    top: 20px;
+    left:0;
+    text-align:left;
+    padding: 40px 20px;
+    min-height: 234px;
+}
+.trm-prod-cont h2{
+    font-size:35px;
+    margin: 0;
+    color: #fff;
+    line-height: 1;
+    font-weight:normal;
+    font-family: 'Bogle-Bold';
+}
+.trm-prod-cont p{
+    font-size:18px;
+    line-height: 1.3;
+    font-family: 'Bogle-Regular';
+}
+.trm-prod-scroller{
+    display: inline-block;
+    width:32%; 
+    vertical-align: top
+}
+.trm-prod-sec .right{
+    vertical-align:top;
+}
+.right .trm-prod-img{
+    float:right;
+    width: 66%;
+}
+.right .trm-prod-cont{width:57%;}
+.trm-prod-cont p span{opacity:0;}
+/** walmart cont **/
+.trm-walmart-disclaimer{display:table;width:100%;}
+.trm-walmart-logo{
+    display:table-cell;
+    width: 30%;
+    text-align: right;
+    padding-right: 20px;
+}
+.trm-walmart-cont{
+    display:table-cell;
+    width: 70%;
+    text-align: left;
+    vertical-align: middle;
+    padding-left:20px;
+}
+.trm-walmart-cont h2{
+    color:#0971ce;
+    font-size:42px;
+    margin: 0;
+}
+.trm-dypricing-products{
+    max-width:90%;
+    margin:auto;
+    padding: 20px 0;
+}
+/** dynn pricing css **/
+ .trm-prod-slider li img,.trm-full-prod-slider li img{margin: auto;}
+ 
+/*prod scroller css */
+.trm-prod-scroller{padding: 4% 1%;};
+ 
+
+ 
+ 
+@media screen and (max-width:1364px){
+    .trm-prod-cont h2{ margin: 1% 0px;}    
+    .trm-prod-cont{min-height: 0;}
+    .trm-prod-cont h2{font-size:32px;}
+    .trm-walmart-cont h2{font-size:35px;}
+}
+
+@media screen and (max-width: 1300px) {
+    .trm-prod-cont{min-height: 0;}
+    .trm-pov-cont{width:37%;}
+	.trm-pov-cont h2{font-size:50px;margin:1% 0;}
+	.trm-pov-cont p{font-size: 18px;margin: 1% 0px;}
+    .trm-prod-cont{padding: 4% 2%;}
+    .trm-prod-cont h2{font-size:30px;}
+    .trm-prod-cont p{margin: 2% 0;font-size: 16px;}
+    
+}
+@media screen and (max-width: 1100px) { 
+    .trm-pov-cont{width:37%;top:50px;}
+    .trm-pov-cont h2{font-size:40px;}
+    .trm-prod-cont{padding: 3% 2%;}
+    .trm-prod-cont p{font-size: 15px;}
+}
+@media screen and (max-width: 1024px) {
+    .trm-pov-cont{top: 50px;width:37%;}
+    .trm-prod-cont h2{font-size:28px;}
+    .trm-walmart-cont h2{font-size:32px;}
+}
+@media screen and (max-width: 950px){
+    .trm-pov-cont h2{font-size:32px;}
+    .trm-pov-cont p{font-size:16px;}
+    .trm-prod-cont h2{font-size:25px;}
+    .trm-prod-cont p{font-size:14px;}
+    .trm-walmart-cont h2{font-size:30px;}
+    .trm-prod-img{width:67%;}
+}
+@media screen and (max-width: 850px){
+    .trm-prod-cont{padding:1% 2%;top:13px;}
+    .trm-prod-cont h2{font-size:22px;}
+    .trm-walmart-cont h2{font-size:25px;}
+    .trm-walmart-logo img{max-width: 80%;}
+}
+@media screen and (max-width: 768px) {
+    .trm-pov-cont h2{font-size: 30px;}
+    .trm-pov-cont p{font-size:14px;}
+    .trm-prod-cont{top:28px;}
+    .trm-prod-cont p{font-size:12px;}
+    .trm-walmart-cont h2{font-size:23px;}
+}
+
+
+@media screen and (max-width: 736px) {
+    /*************6+ landscape******************/
+    /******* leave blank if no changes needed *****/ 
+    .trm_desktop {
+        display: none;
+    }
+
+    .trm_mobile {
+        display: block;
+    }
+
+    .trm-pov-cont{position:relative;width:100%;top:0;padding: 2% 0;}
+	.trm-pov-cont h2{font-size:50px;}
+    .trm-pov-cont p {font-size: 20px;max-width: 60%;margin: auto;}
+    .trm-prod-img,.right .trm-prod-img{width: 100%;}
+    .trm-prod-scroller{min-height:100px;width:100%;}
+    .trm-prod-cont,.right .trm-prod-cont {top: 28px;left: inherit;right: 0;width: 70%;background: none;}
+    .trm-prod-cont h2{font-size:36px;}
+    .trm-prod-cont p{font-size:25px;margin:6% 0;}
+    .mb-logo{margin-bottom: 4%;}
+    .trm-walmart-disclaimer,.trm-walmart-logo,.trm-walmart-cont{display: block;width:100%;text-align: center;padding: 0;}
+    .trm-walmart-cont h2 {font-size: 40px;max-width: 86%;line-height: 1;margin: auto;padding: 1% 0;}
+    .right .trm-prod-img{float:inherit;}
+	
+    /** dynn pricing css **/
+    .trm-prod-scroller,.trm-dypricing-products{padding: 8% 1%;}
+
+}
+
+@media screen and (max-width: 670px) {
+    .trm-prod-cont p {font-size: 21px;margin: 3% 0;}
+    .trm-prod-cont h2{font-size:34px;}
+    .trm-walmart-cont h2{font-size:33px;}
+    
+}
+@media screen and (max-width: 590px) {
+    .trm-prod-cont, .right .trm-prod-cont{top:14px;}
+    .trm-prod-cont h2{font-size:27px;}
+    .trm-prod-cont p{font-size:18px;}
+    .trm-pov-cont p{max-width: 85%;}
+    .trm-walmart-cont h2{font-size:27px;}
+    
+}
+@media screen and (max-width: 470px) {
+	.trm-pov-cont h2{font-size:40px;}
+    .trm-pov-cont p{font-size:17px;}
+    .trm-prod-cont h2{font-size:22px;}
+    .trm-prod-cont p{font-size:15px;}
+    .trm-walmart-cont h2{font-size:22px;}
+}
+
+@media screen and (max-width: 400px) {
+    .trm-pov-cont p{font-size:16px;}
+    .trm-prod-cont p{font-size:14px;margin:2% 0;}
+    .trm-walmart-cont h2{font-size:21px;}
+    .trm-walmart-logo img{max-width: 60%;}
+    .mb-logo img{max-width:50%;}
+    .trm-prod-cont h2{font-size:20px;}
+}
+
+@media screen and (max-width: 360px) {
+    .trm-pov-cont p{font-size:14px;}
+    .trm-prod-cont, .right .trm-prod-cont{top:8px;}
+    .trm-prod-cont h2,.trm-walmart-cont h2{font-size:18px;}
+    .trm-prod-cont p{font-size:12px;}
+    .trm-pov-cont h2{font-size:30px;}
+}
